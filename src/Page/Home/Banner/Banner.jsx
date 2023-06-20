@@ -35,7 +35,7 @@ const Banner = () => {
               <button className="w-2/4 btn btn-active btn-neutral capitalize text-xl">
                 Say Hello <TbBrandTelegram></TbBrandTelegram>
               </button>
-              <button className="w-2/6 flex items-center gap-4 text-lg border-2 border-black p-2 rounded-full shadow-md bg-base-100 capitalize sm:mb-10 md:mb-0">
+              <button className="w-2/6 md:w-1/2 lg:w-2/6 flex items-center gap-4 text-lg border-2 border-black p-2 rounded-full shadow-md bg-base-100 capitalize sm:mb-10 md:mb-0">
                 <BsMouse></BsMouse> <span>Scroll Down</span>{" "}
                 <BsArrowDownShort></BsArrowDownShort>
               </button>
