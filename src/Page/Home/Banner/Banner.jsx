@@ -1,24 +1,39 @@
-import { FaHandshake, FaWhatsapp } from "react-icons/fa";
+import { FaHandshake, FaLinkedin } from "react-icons/fa";
 import { TbBrandTelegram } from "react-icons/tb";
 import { BsArrowDownShort, BsMouse } from "react-icons/bs";
 import { LuGithub } from "react-icons/lu";
 import { BsGlobe } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
+const zihan_github = "https://github.com/Zihanur";
+const zihan_website = "TODO";
+const zihan_linkdin = "https://www.linkedin.com/in/zihanur-rahman-877597184/";
+
 const Banner = () => {
+
+  const handleGithub =() =>{
+    window.open(zihan_github, '_blank');
+  }
+  const handleWebsite =() =>{
+    window.open(zihan_website, '_blank');
+  }
+  const handleLinkdin =() =>{
+    window.open(zihan_linkdin, '_blank');
+  }
+  
   return (
     <div>
       <section className="mt-16 md:mt-24 mx-6">
         <div className="grid grid-cols-1 md:grid-cols-7">
           <div className="col-span-1 flex md:flex-col gap-8 text-2xl justify-center  sm:mb-10 md:mb-0">
-            <Link>
+            <Link onClick={handleGithub}>
               <LuGithub></LuGithub>
             </Link>
-            <Link>
+            <Link onClick={handleWebsite}>
               <BsGlobe></BsGlobe>
             </Link>
-            <Link>
-              <FaWhatsapp></FaWhatsapp>
+            <Link onClick={handleLinkdin}>
+              <FaLinkedin></FaLinkedin>
             </Link>
           </div>
           <div className="col-span-3">
