@@ -22,7 +22,7 @@ const Banner = () => {
   }
   
   return (
-    <div>
+    <>
       <section className="mt-16 md:mt-24 mx-6">
         <div className="grid grid-cols-1 md:grid-cols-7">
           <div className="col-span-1 flex md:flex-col gap-8 text-2xl justify-center  sm:mb-10 md:mb-0">
@@ -64,7 +64,7 @@ const Banner = () => {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 
