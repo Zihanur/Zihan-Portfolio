@@ -5,19 +5,19 @@ import DownloadCV from "./DownloadCV";
 
 const About = () => {
   return (
-    <section className="mt-10 md:mt-24 min-h-screen mx-6">
+    <section className="mt-10 md:mt-20 min-h-screen mx-6">
       <div className=" mb-10">
         <h1 className="text-4xl font-bold text-center">About Me</h1>
         <p className="text-xl text-center mt-2">My Introduction</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2">
-        <div>
+        <div className="sm:order-1 md:-order-1 sm:my-10">
           <img
             className="mask mask-hexagon filter grayscale"
             src="https://i.ibb.co/DtR8sZ9/IMG-1763.jpg"
           />
         </div>
-        <div>
+        <div className="">
           <div className="flex space-x-4">
             <div className="text-center p-4 rounded-3xl bg-base-200 card shadow-xl w-full flex flex-col gap-3">
               <div className="w-full">
