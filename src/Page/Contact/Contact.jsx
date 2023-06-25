@@ -12,16 +12,15 @@ const zihan_whatsapp = "https://web.whatsapp.com/";
 const zihan_messenger = "https://www.facebook.com/messages/t/100008874336211/";
 
 const Contact = () => {
-  
-  const handleEmail =() =>{
-    window.open(zihan_email, '_blank');
-  }
-  const handleWhatsapp =() =>{
-    window.open(zihan_whatsapp, '_blank');
-  }
-  const handleMessenger =() =>{
-    window.open(zihan_messenger, '_blank');
-  }
+  const handleEmail = () => {
+    window.open(zihan_email, "_blank");
+  };
+  const handleWhatsapp = () => {
+    window.open(zihan_whatsapp, "_blank");
+  };
+  const handleMessenger = () => {
+    window.open(zihan_messenger, "_blank");
+  };
 
   return (
     <section className="mt-16 md:mt-32 lg:mt-40 mx-6">
@@ -38,7 +37,10 @@ const Contact = () => {
                 <FaMailBulk className="w-9 h-9 mb-2"></FaMailBulk>
                 <h2 className="card-title">Email</h2>
                 <p>zihanurrahman.cse@gmail.com</p>
-                <p onClick={handleEmail} className="btn flex items-center gap-2 mt-2">
+                <p
+                  onClick={handleEmail}
+                  className="btn flex items-center gap-2 mt-2"
+                >
                   Write me <FaArrowRight></FaArrowRight>
                 </p>
               </div>
@@ -48,7 +50,10 @@ const Contact = () => {
                 <FaWhatsapp className="w-9 h-9 mb-2"></FaWhatsapp>
                 <h2 className="card-title">Whatsapp</h2>
                 <p>+8801704843848</p>
-                <p onClick={handleWhatsapp} className="btn flex items-center gap-2 mt-2">
+                <p
+                  onClick={handleWhatsapp}
+                  className="btn flex items-center gap-2 mt-2"
+                >
                   Write me <FaArrowRight></FaArrowRight>
                 </p>
               </div>
@@ -58,7 +63,10 @@ const Contact = () => {
                 <FaFacebookMessenger className="w-9 h-9 mb-2"></FaFacebookMessenger>
                 <h2 className="card-title">Messenger</h2>
                 <p>zihan.fb/892739</p>
-                <p onClick={handleMessenger} className="btn flex items-center gap-2 mt-2">
+                <p
+                  onClick={handleMessenger}
+                  className="btn flex items-center gap-2 mt-2"
+                >
                   Write me <FaArrowRight></FaArrowRight>
                 </p>
               </div>
@@ -72,15 +80,22 @@ const Contact = () => {
           <div className="flex flex-col justify-center items-center space-y-28">
             <div className="flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
               <div className="card ">
-                <form className="card-body">
+                <form
+                  action="https://formspree.io/f/mzblpdwz"
+                  method="POST"
+                  className="card-body"
+                >
                   <div className="form-control mb-6">
                     <label className="label">
                       <h1 className="label-text text-xl">Your Name</h1>
                     </label>
                     <input
                       type="name"
+                      name="name"
                       placeholder="Name"
                       className="input input-bordered"
+                      autoComplete="off"
+                      required
                     />
                   </div>
                   <div className="form-control mb-6">
@@ -89,31 +104,39 @@ const Contact = () => {
                     </label>
                     <input
                       type="email"
+                      name="email"
                       placeholder="email"
                       className="input input-bordered"
+                      autoComplete="off"
+                      required
                     />
                   </div>
                   <div className="form-control mb-6">
                     <label className="label">
-                      <h1 className="label-text text-xl">Your Project details</h1>
+                      <h1 className="label-text text-xl">
+                        Your Project details
+                      </h1>
                     </label>
                     <textarea
                       type="text"
+                      name="message"
                       className="input input-bordered h-32"
+                      autoComplete="off"
+                      required
                     />
                   </div>
-                  <button className=" btn btn-active btn-neutral capitalize text-2xl font-normal mt-6">
+                  <button type="submit" className=" btn btn-active btn-neutral capitalize text-2xl font-normal mt-6">
                     Send message <TbBrandTelegram></TbBrandTelegram>
                   </button>
                 </form>
               </div>
             </div>
             <button className="w-2/6 md:w-1/2 lg:w-2/6 flex items-center gap-4 text-lg border-2 border-black p-2 rounded-full shadow-md bg-base-100 capitalize sm:mb-10 md:mb-0">
-                <BsMouse></BsMouse> <span>Scroll Up</span>{" "}
-                <BsArrowUpShort></BsArrowUpShort>
-              </button>
-        </div>
+              <BsMouse></BsMouse> <span>Scroll Up</span>{" "}
+              <BsArrowUpShort></BsArrowUpShort>
+            </button>
           </div>
+        </div>
       </div>
     </section>
   );
