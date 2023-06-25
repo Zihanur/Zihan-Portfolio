@@ -5,7 +5,7 @@ import DownloadCV from "./DownloadCV";
 
 const About = () => {
   return (
-    <section className="mt-10 md:mt-20 min-h-screen mx-6">
+    <section className="mt-16 md:mt-32">
       <div className=" mb-10">
         <h1 className="text-4xl font-bold text-center">About Me</h1>
         <p className="text-xl text-center mt-2">My Introduction</p>

@@ -1,14 +1,16 @@
+
 const Qualification = () => {
+
   return (
-    <section className="mt-10 md:mt-0 min-h-screen mx-6">
+    <section className="mt-16 md:mt-32 lg:mt-40">
       <div className="mb-10">
         <h1 className="text-4xl font-bold text-center">Qualification</h1>
         <p className="text-xl text-center mt-2">My personal journey</p>
       </div>
-      <div className=" md:flex justify-center items-center">
-        <div className="w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8">
+        <div className="w-full h-full">
           <h1 className="text-3xl font-medium text-center mb-2">Education</h1>
-          <div className="border hover:bg-base-200 rounded-xl shadow-xl p-8 transition duration-100">
+          <div className="border hover:bg-base-200 rounded-xl shadow-xl p-8 transition duration-100 h-80 md:h-96 lg:80">
             <ul className="steps steps-vertical">
               <li data-content="" className="step step-neutral">
                 <div className="text-start mt-10">
@@ -29,11 +31,9 @@ const Qualification = () => {
             </ul>
           </div>
         </div>
-        <div className="divider lg:divider-horizontal md:mt-10">
-        </div>
-        <div className="w-full">
+        <div className="w-full h-full">
           <h1 className="text-3xl font-medium text-center mb-2">Courses</h1>
-          <div className="border hover:bg-base-200 rounded-xl shadow-xl p-8 transition duration-100">
+          <div className="border hover:bg-base-200 rounded-xl shadow-xl p-8 transition duration-100 h-80 md:h-96 lg:80">
             <ul className="steps steps-vertical">
               <li data-content="" className="step step-neutral">
                 <div className="text-start mt-10">

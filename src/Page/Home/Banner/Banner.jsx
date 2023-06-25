@@ -23,7 +23,7 @@ const Banner = () => {
   
   return (
     <>
-      <section className="mt-16 md:mt-24 mx-6">
+      <section className="mt-16 md:mt-24">
         <div className="grid grid-cols-1 md:grid-cols-7">
           <div className="col-span-1 flex md:flex-col gap-8 text-2xl justify-center  sm:mb-10 md:mb-0">
             <Link onClick={handleGithub}>
@@ -39,7 +39,7 @@ const Banner = () => {
           <div className="col-span-3">
             <div className="flex items-center gap-4 text-6xl font-bold">
               <h1>Zihanur Rahman</h1>
-              <FaHandshake className="text-yellow-300"></FaHandshake>
+              <FaHandshake className="text-teal-600"></FaHandshake>
             </div>
             <p className="text-4xl my-6">----------------- React Developer</p>
             <p className="text-xl text-slate-600 mb-10">

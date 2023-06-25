@@ -16,7 +16,7 @@ const Navbar = () => {
         <Link to={"/portfolio"}>Portfolio</Link>
       </li>
       <li className="text-slate-700 hover:text-black hover:underline">
-        <Link to={"/Contact"}>Contact</Link>
+        <Link to={"/contact"}>Contact</Link>
       </li>
     </>
   );
@@ -54,6 +54,7 @@ const Navbar = () => {
           <ul className="flex md:gap-4 lg:gap-6 px-1 text-2xl">{navbarOptions}</ul>
         </div>
       </div>
+      <hr />
     </>
   );
 };
