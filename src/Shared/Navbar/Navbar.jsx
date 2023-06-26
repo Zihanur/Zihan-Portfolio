@@ -13,7 +13,7 @@ const Navbar = () => {
         <Link to={"/skills"}>Skills</Link>
       </li>
       <li className="text-slate-700 hover:text-black hover:underline">
-        <Link to={"/portfolio"}>Portfolio</Link>
+        <Link to={"/projects"}>Projects</Link>
       </li>
       <li className="text-slate-700 hover:text-black hover:underline">
         <Link to={"/contact"}>Contact</Link>

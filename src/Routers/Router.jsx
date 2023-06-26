@@ -3,8 +3,8 @@ import Main from "../Layouts/Main";
 import Home from "../Page/Home/Home/Home";
 import About from "../Page/About/About";
 import Skills from "../Page/Skills/Skills";
-import Portfolio from "../Page/Portfolio/Portfolio";
 import Contact from "../Page/Contact/Contact";
+import Projects from "../Page/Projects/Projects";
 
 const router = createBrowserRouter([
   {
@@ -24,8 +24,8 @@ const router = createBrowserRouter([
         element: <Skills></Skills>
       },
       {
-        path: "/portfolio",
-        element: <Portfolio></Portfolio>
+        path: "/projects",
+        element: <Projects></Projects>
       },
       {
         path: "/contact",

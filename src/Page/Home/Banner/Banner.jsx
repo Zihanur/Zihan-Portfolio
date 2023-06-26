@@ -48,20 +48,25 @@ const Banner = () => {
             </p>
             <div className="flex sm:flex md:flex-col gap-16 md:gap-32">
               <button
-                onClick={() => window.my_modal_1.showModal()}
+                onClick={() => window.my_modal_2.showModal()}
                 className="w-2/4 btn btn-active btn-neutral capitalize text-xl"
               >
                 Say Hello <TbBrandTelegram></TbBrandTelegram>
               </button>
-              <dialog id="my_modal_1" className="modal">
-                <form method="dialog" className="modal-box">
+
+              <dialog id="my_modal_2" className="modal">
+                <form
+                  method="POST"
+                  className="modal-box bg-base-200"
+                  action="https://formspree.io/f/mzblpdwz"
+                >
                   <ContactModal></ContactModal>
-                  <div className="modal-action">
-                    {/* if there is a button in form, it will close the modal */}
-                    <button className="btn">Close</button>
-                  </div>
+                </form>
+                <form method="dialog" className="modal-backdrop">
+                  <button>close</button>
                 </form>
               </dialog>
+
               <button className="w-2/6 md:w-1/2 lg:w-2/6 flex items-center gap-4 text-lg border-2 border-black p-2 rounded-full shadow-md bg-base-100 capitalize sm:mb-10 md:mb-0">
                 <BsMouse></BsMouse> <span>Scroll Down</span>{" "}
                 <BsArrowDownShort></BsArrowDownShort>
