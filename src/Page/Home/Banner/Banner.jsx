@@ -4,26 +4,26 @@ import { BsArrowDownShort, BsMouse } from "react-icons/bs";
 import { LuGithub } from "react-icons/lu";
 import { BsGlobe } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import ContactModal from "./ContactModal";
 
 const zihan_github = "https://github.com/Zihanur";
 const zihan_website = "TODO";
 const zihan_linkdin = "https://www.linkedin.com/in/zihanur-rahman-877597184/";
 
 const Banner = () => {
+  const handleGithub = () => {
+    window.open(zihan_github, "_blank");
+  };
+  const handleWebsite = () => {
+    window.open(zihan_website, "_blank");
+  };
+  const handleLinkdin = () => {
+    window.open(zihan_linkdin, "_blank");
+  };
 
-  const handleGithub =() =>{
-    window.open(zihan_github, '_blank');
-  }
-  const handleWebsite =() =>{
-    window.open(zihan_website, '_blank');
-  }
-  const handleLinkdin =() =>{
-    window.open(zihan_linkdin, '_blank');
-  }
-  
   return (
     <>
-      <section className="mt-16 md:mt-24">
+      <section className="mt-16 md:mt-24 md:mb-8">
         <div className="grid grid-cols-1 md:grid-cols-7">
           <div className="col-span-1 flex md:flex-col gap-8 text-2xl justify-center  sm:mb-10 md:mb-0">
             <Link onClick={handleGithub}>
@@ -47,9 +47,21 @@ const Banner = () => {
               work. Hire me...
             </p>
             <div className="flex sm:flex md:flex-col gap-16 md:gap-32">
-              <button className="w-2/4 btn btn-active btn-neutral capitalize text-xl">
+              <button
+                onClick={() => window.my_modal_1.showModal()}
+                className="w-2/4 btn btn-active btn-neutral capitalize text-xl"
+              >
                 Say Hello <TbBrandTelegram></TbBrandTelegram>
               </button>
+              <dialog id="my_modal_1" className="modal">
+                <form method="dialog" className="modal-box">
+                  <ContactModal></ContactModal>
+                  <div className="modal-action">
+                    {/* if there is a button in form, it will close the modal */}
+                    <button className="btn">Close</button>
+                  </div>
+                </form>
+              </dialog>
               <button className="w-2/6 md:w-1/2 lg:w-2/6 flex items-center gap-4 text-lg border-2 border-black p-2 rounded-full shadow-md bg-base-100 capitalize sm:mb-10 md:mb-0">
                 <BsMouse></BsMouse> <span>Scroll Down</span>{" "}
                 <BsArrowDownShort></BsArrowDownShort>

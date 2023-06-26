@@ -1,11 +1,12 @@
-import { BsArrowUpShort, BsMouse } from "react-icons/bs";
+
 import {
   FaArrowRight,
   FaFacebookMessenger,
   FaMailBulk,
   FaWhatsapp,
 } from "react-icons/fa";
-import { TbBrandTelegram } from "react-icons/tb";
+import ContactMessage from "./ContactMessage";
+import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 
 const zihan_email = "https://mail.google.com/mail/u/0/#inbox";
 const zihan_whatsapp = "https://web.whatsapp.com/";
@@ -23,12 +24,10 @@ const Contact = () => {
   };
 
   return (
-    <section className="mt-16 md:mt-32 lg:mt-40 mx-6">
-      <div className=" mb-10">
-        <h1 className="text-4xl font-bold text-center">Contact Me</h1>
-        <p className="text-xl text-center mt-2">Get in touch</p>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-8">
+    <section className="mt-16 md:mt-32 lg:mt-40">
+      <SectionTitle title={'Contact Me'} subTitle={'Get in touch'}></SectionTitle>
+      {/* Main part of section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-8 mx-10">
         <div className="w-full">
           <h1 className="text-3xl font-medium text-center mb-8">Talk to me</h1>
           <div className="flex flex-col justify-center items-center gap-6">
@@ -73,70 +72,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="w-full">
-          <h1 className="text-3xl font-medium text-center mb-6">
-            Write me your project
-          </h1>
-          <div className="flex flex-col justify-center items-center space-y-28">
-            <div className="flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-              <div className="card ">
-                <form
-                  action="https://formspree.io/f/mzblpdwz"
-                  method="POST"
-                  className="card-body"
-                >
-                  <div className="form-control mb-6">
-                    <label className="label">
-                      <h1 className="label-text text-xl">Your Name</h1>
-                    </label>
-                    <input
-                      type="name"
-                      name="name"
-                      placeholder="Name"
-                      className="input input-bordered"
-                      autoComplete="off"
-                      required
-                    />
-                  </div>
-                  <div className="form-control mb-6">
-                    <label className="label">
-                      <h1 className="label-text text-xl">Your Email</h1>
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="email"
-                      className="input input-bordered"
-                      autoComplete="off"
-                      required
-                    />
-                  </div>
-                  <div className="form-control mb-6">
-                    <label className="label">
-                      <h1 className="label-text text-xl">
-                        Your Project details
-                      </h1>
-                    </label>
-                    <textarea
-                      type="text"
-                      name="message"
-                      className="input input-bordered h-32"
-                      autoComplete="off"
-                      required
-                    />
-                  </div>
-                  <button type="submit" className=" btn btn-active btn-neutral capitalize text-2xl font-normal mt-6">
-                    Send message <TbBrandTelegram></TbBrandTelegram>
-                  </button>
-                </form>
-              </div>
-            </div>
-            <button className="w-2/6 md:w-1/2 lg:w-2/6 flex items-center gap-4 text-lg border-2 border-black p-2 rounded-full shadow-md bg-base-100 capitalize sm:mb-10 md:mb-0">
-              <BsMouse></BsMouse> <span>Scroll Up</span>{" "}
-              <BsArrowUpShort></BsArrowUpShort>
-            </button>
-          </div>
-        </div>
+        <ContactMessage></ContactMessage>
       </div>
     </section>
   );

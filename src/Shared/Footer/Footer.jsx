@@ -7,10 +7,10 @@ const Footer = () => {
       <hr className="my-6"/>
       <div className="footer footer-center text-base-content rounded p-4">
         <div className="grid grid-flow-col gap-6 text-xl">
-          <Link className="link link-hover">About us</Link>
+          <Link className="link link-hover">About</Link>
           <Link className="link link-hover">Contact</Link>
+          <Link className="link link-hover">Blog</Link>
           <Link className="link link-hover">Jobs</Link>
-          <Link className="link link-hover">Press kit</Link>
         </div>
         <div>
           <div className="grid grid-flow-col gap-6">

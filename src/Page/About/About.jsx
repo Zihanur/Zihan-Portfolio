@@ -2,14 +2,16 @@ import { GiAchievement } from "react-icons/gi";
 import { BsBagFill } from "react-icons/bs";
 import { MdSupportAgent } from "react-icons/md";
 import DownloadCV from "./DownloadCV";
+import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 
 const About = () => {
   return (
-    <section className="mt-16 md:mt-32">
-      <div className=" mb-10">
-        <h1 className="text-4xl font-bold text-center">About Me</h1>
-        <p className="text-xl text-center mt-2">My Introduction</p>
-      </div>
+    <section className="mt-16 md:mt-24">
+      <SectionTitle
+        title={"About Me"}
+        subTitle={"My Introduction"}
+      ></SectionTitle>
+      {/* Main part of section */}
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="sm:order-1 md:-order-1 sm:my-10">
           <img
@@ -31,7 +33,7 @@ const About = () => {
                 <BsBagFill className="text-3xl mx-auto"></BsBagFill>
               </div>
               <h1 className="text-2xl">Projects</h1>
-              <p>40+</p>
+              <p>20+</p>
             </div>
             <div className="text-center p-4 rounded-3xl bg-base-200 card shadow-xl w-full flex flex-col gap-3">
               <div className="w-full">
@@ -42,9 +44,11 @@ const About = () => {
             </div>
           </div>
           <p className="my-14 text-xl text-slate-500 text-justify">
-            Junior Web Developer, I created web pages with UI. I completed 6
-            months traning web development full course. Comfortable with React,
-            ES6, Express JS, MongoDB, Tailwind CSS
+            I am Junior Web Developer. I created user-frinedly and responsive
+            site by React. I completed{" "}
+            <span className="font-semibold">Web Development Full Course</span>{" "}
+            tranning in 6 months. Comfortable with React, React Router,
+            JavaScript ES6, Node JS, Express JS, MongoDB, Firebase Tailwind CSS.
           </p>
           <DownloadCV></DownloadCV>
         </div>

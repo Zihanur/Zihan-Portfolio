@@ -1,10 +1,10 @@
+import SectionTitle from "../../Components/SectionTitle/SectionTitle";
+
 const Skills = () => {
   return (
-    <section className="mt-16 md:mt-32">
-      <div className=" mb-10">
-        <h1 className="text-4xl font-bold text-center">Skills</h1>
-        <p className="text-xl text-center mt-2">My technical level</p>
-      </div>
+    <section className="mt-16 md:mt-24">
+      <SectionTitle title={'Skills'} subTitle={'My technical level'}></SectionTitle>
+      {/* Main part of section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8">
         <div className="border-2 border-black rounded bg-base-100 shadow-xl">
           <h1 className="text-center mt-6 text-2xl font-medium">
