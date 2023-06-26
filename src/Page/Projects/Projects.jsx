@@ -1,16 +1,20 @@
-import { useEffect, useState } from 'react';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
+import { useEffect, useState } from "react";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
+import Project from "./Project";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
-  
-  useEffect(()=>{
-    fetch('/public/projects.json')
-    .then(res=>res.json())
-    .then(data=>setProjects(data))
-  },[])
-  console.log(projects)
+  const webProject = projects.filter(
+    (procect) => procect.project_type == "web"
+  );
+
+  useEffect(() => {
+    fetch("/public/projects.json")
+      .then((res) => res.json())
+      .then((data) => setProjects(data));
+  }, []);
+  console.log(projects);
 
   return (
     <section className="mt-10 md:mt-24 min-h-screen mx-6">
@@ -18,7 +22,7 @@ const Projects = () => {
         <h1 className="text-4xl font-bold text-center">Projects</h1>
         <p className="text-xl text-center mt-2">Most recent work</p>
       </div>
-      <div className='flex justify-center items-center'>
+      <div className="flex justify-center items-center">
         <Tabs>
           <TabList className="font-bold">
             <Tab className="tab text-2xl">All</Tab>
@@ -28,10 +32,18 @@ const Projects = () => {
           </TabList>
 
           <TabPanel>
-            <h2>Any content 1</h2>
+            <div className="border p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {projects.map((project) => (
+                <Project key={project.id} project={project}></Project>
+              ))}
+            </div>
           </TabPanel>
           <TabPanel>
-            <h2>Any content 2</h2>
+            <div className="border p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {webProject.map((project) => (
+                <Project key={project.id} project={project}></Project>
+              ))}
+            </div>
           </TabPanel>
           <TabPanel>
             <h2>Any content 3</h2>

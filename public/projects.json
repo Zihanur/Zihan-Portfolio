@@ -2,6 +2,7 @@
   {
     "id": 1,
     "project_name": "Elite Footbal Camp",
+    "img":"https://i.ibb.co/RPSV6yd/Elit-footbal-camp1.png",
     "project_type": "web",
     "live_link": "https://elite-football-camp.web.app/",
     "github_client": "https://github.com/Zihanur/Elite-Football-Camp",
@@ -11,6 +12,7 @@
   {
     "id": 2,
     "project_name": "Soprts Toy",
+    "img":"https://i.ibb.co/7CX8sdz/sports-toy1.png",
     "project_type": "web",
     "live_link": "https://sports-toys.web.app/",
     "github_client": "https://github.com/Zihanur/Sports-Toys-Ecommerce",
@@ -20,6 +22,7 @@
   {
     "id": 3,
     "project_name": "Portfolio",
+    "img":"https://i.ibb.co/WfpbmGd/portfolio1.png",
     "project_type": "web",
     "live_link": "https://elite-football-camp.web.app/",
     "github_client": "https://github.com/Zihanur/Sports-Toys-Ecommerce-Server",
@@ -29,6 +32,7 @@
   {
     "id": 4,
     "project_name": "Bangale Rastuarant",
+    "img":"https://i.ibb.co/1qGHtXz/bangale-restaurant1.png",
     "project_type": "web",
     "live_link": "https://bangali-restaurant.web.app/",
     "github_client": "https://github.com/Zihanur/Bangale-Restaurant",
