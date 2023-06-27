@@ -27,7 +27,6 @@ const Contact = () => {
     <section className="mt-16 md:mt-24">
       <Helmet>
         <title>Contact | Zihan Portfolio</title>
-        <meta name="description" content="Description of your page" />
       </Helmet>
       <SectionTitle
         title={"Contact Me"}

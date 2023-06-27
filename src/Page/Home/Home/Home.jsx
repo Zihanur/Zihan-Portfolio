@@ -12,7 +12,6 @@ const Home = () => {
     <div className="mx-6">
       <Helmet>
         <title>Home | Zihan Portfolio</title>
-        <meta name="description" content="Description of your page" />
       </Helmet>
       {/* Home page sections */}
       <Banner></Banner>

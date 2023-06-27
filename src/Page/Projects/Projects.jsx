@@ -22,7 +22,6 @@ const Projects = () => {
     <section className="mt-10 md:mt-10 min-h-screen mx-6">
       <Helmet>
         <title>Projects | Zihan Portfolio</title>
-        <meta name="description" content="Description of your page" />
       </Helmet>
       <SectionTitle
         title={"Projects"}

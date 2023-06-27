@@ -9,7 +9,6 @@ const About = () => {
     <section className="mt-16 md:mt-24">
       <Helmet>
         <title>About | Zihan Portfolio</title>
-        <meta name="description" content="Description of your page" />
       </Helmet>
       <SectionTitle
         title={"About Me"}
