@@ -4,6 +4,7 @@ import { MdSupportAgent } from "react-icons/md";
 import DownloadCV from "./DownloadCV";
 import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 import { Helmet } from "react-helmet-async";
+
 const About = () => {
   return (
     <section className="mt-16 md:mt-24">

@@ -5,6 +5,7 @@ import { LuGithub } from "react-icons/lu";
 import { BsGlobe } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import ContactModal from "./ContactModal";
+import { motion } from "framer-motion";
 
 const zihan_github = "https://github.com/Zihanur";
 const zihan_website = "TODO";
@@ -37,15 +38,32 @@ const Banner = () => {
             </Link>
           </div>
           <div className="col-span-3">
-            <div className="flex items-center gap-4 text-6xl font-bold">
+            <motion.div
+              initial={{ x: "-100vw" }}
+              animate={{ x: 0 }}
+              transition={{ delay: 0.2, type: "spring", stiffness: 20 }}
+              className="flex items-center gap-4 text-6xl font-bold"
+            >
               <h1>Zihanur Rahman</h1>
               <FaHandshake className="text-teal-600"></FaHandshake>
-            </div>
-            <p className="text-4xl my-6">----------------- React Developer</p>
-            <p className="text-xl text-slate-600 mb-10">
+            </motion.div>
+            <motion.p
+              initial={{ x: "-100vw" }}
+              animate={{ x: 0 }}
+              transition={{ delay: 0.4, type: "spring", stiffness: 20 }}
+              className="text-4xl my-6"
+            >
+              ----------------- React Developer
+            </motion.p>
+            <motion.p
+              initial={{ x: "-100vw" }}
+              animate={{ x: 0 }}
+              transition={{ delay: 0.6, type: "spring", stiffness: 20 }}
+              className="text-xl text-slate-600 mb-10"
+            >
               I am Junior Developer. I am very passionate and dedicated to my
               work. Hire me...
-            </p>
+            </motion.p>
             <div className="flex sm:flex md:flex-col gap-16 md:gap-32">
               <button
                 onClick={() => window.my_modal_2.showModal()}
@@ -53,7 +71,7 @@ const Banner = () => {
               >
                 Say Hello <TbBrandTelegram></TbBrandTelegram>
               </button>
-
+              {/*say hello modal */}
               <dialog id="my_modal_2" className="modal">
                 <form
                   method="POST"
@@ -74,7 +92,10 @@ const Banner = () => {
             </div>
           </div>
           <div className="col-span-3">
-            <img
+            <motion.img
+              initial={{ x: "+100vw" }}
+              animate={{ x: 0 }}
+              transition={{ type: "spring", stiffness: 20 }}
               className="mask mask-squircle filter grayscale"
               src="https://i.ibb.co/N104v60/IMG-9060.jpg"
             />

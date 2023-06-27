@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const navbarOptions = (
@@ -43,15 +44,26 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-md dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               {navbarOptions}
             </ul>
           </div>
-          <Link className="btn btn-ghost text-slate-700 text-4xl">ZIHANUR RAHMAN</Link>
+          <Link to={"/"}>
+            <motion.button
+              className="text-slate-700 text-4xl font-semibold"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 4 }}
+            >
+              ZIHAN
+            </motion.button>
+          </Link>
         </div>
         <div className="navbar-end hidden lg:flex">
-          <ul className="flex md:gap-4 lg:gap-6 px-1 text-2xl">{navbarOptions}</ul>
+          <ul className="flex md:gap-4 lg:gap-6 px-1 text-2xl">
+            {navbarOptions}
+          </ul>
         </div>
       </div>
       <hr />
