@@ -3,10 +3,14 @@ import { BsBagFill } from "react-icons/bs";
 import { MdSupportAgent } from "react-icons/md";
 import DownloadCV from "./DownloadCV";
 import SectionTitle from "../../Components/SectionTitle/SectionTitle";
-
+import { Helmet } from "react-helmet-async";
 const About = () => {
   return (
     <section className="mt-16 md:mt-24">
+      <Helmet>
+        <title>About | Zihan Portfolio</title>
+        <meta name="description" content="Description of your page" />
+      </Helmet>
       <SectionTitle
         title={"About Me"}
         subTitle={"My Introduction"}

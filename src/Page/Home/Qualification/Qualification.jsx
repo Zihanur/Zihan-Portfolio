@@ -2,7 +2,7 @@ import SectionTitle from "../../../Components/SectionTitle/SectionTitle";
 
 const Qualification = () => {
   return (
-    <section className="mt-16 md:mt-24 lg:mt-40 lg:mb-8">
+    <section className="mt-16 md:mt-24 lg:mt-40 lg:mb-36">
       <SectionTitle title={'Qualification'} subTitle={'My personal journey'}></SectionTitle>
       {/* Main part of section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8">

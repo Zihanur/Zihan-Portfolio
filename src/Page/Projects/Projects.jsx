@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Project from "./Project";
+import { Helmet } from "react-helmet-async";
+import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -17,11 +19,15 @@ const Projects = () => {
   console.log(projects);
 
   return (
-    <section className="mt-10 md:mt-24 min-h-screen mx-6">
-      <div className=" mb-10">
-        <h1 className="text-4xl font-bold text-center">Projects</h1>
-        <p className="text-xl text-center mt-2">Most recent work</p>
-      </div>
+    <section className="mt-10 md:mt-10 min-h-screen mx-6">
+      <Helmet>
+        <title>Projects | Zihan Portfolio</title>
+        <meta name="description" content="Description of your page" />
+      </Helmet>
+      <SectionTitle
+        title={"Projects"}
+        subTitle={"Most recent work"}
+      ></SectionTitle>
       <div className="flex justify-center items-center">
         <Tabs>
           <TabList className="font-bold">

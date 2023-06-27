@@ -1,4 +1,3 @@
-
 import {
   FaArrowRight,
   FaFacebookMessenger,
@@ -7,6 +6,7 @@ import {
 } from "react-icons/fa";
 import ContactMessage from "./ContactMessage";
 import SectionTitle from "../../Components/SectionTitle/SectionTitle";
+import { Helmet } from "react-helmet-async";
 
 const zihan_email = "https://mail.google.com/mail/u/0/#inbox";
 const zihan_whatsapp = "https://web.whatsapp.com/";
@@ -24,8 +24,15 @@ const Contact = () => {
   };
 
   return (
-    <section className="mt-16 md:mt-32 lg:mt-40">
-      <SectionTitle title={'Contact Me'} subTitle={'Get in touch'}></SectionTitle>
+    <section className="mt-16 md:mt-24">
+      <Helmet>
+        <title>Contact | Zihan Portfolio</title>
+        <meta name="description" content="Description of your page" />
+      </Helmet>
+      <SectionTitle
+        title={"Contact Me"}
+        subTitle={"Get in touch"}
+      ></SectionTitle>
       {/* Main part of section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-8 mx-10">
         <div className="w-full">
