@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Project from "./Project";
-import { Helmet } from "react-helmet-async";
 import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 
 const Projects = () => {
@@ -20,9 +19,7 @@ const Projects = () => {
 
   return (
     <section className="mt-10 md:mt-10 min-h-screen mx-6">
-      <Helmet>
-        <title>Projects | Zihan Portfolio</title>
-      </Helmet>
+      
       <SectionTitle
         title={"Projects"}
         subTitle={"Most recent work"}

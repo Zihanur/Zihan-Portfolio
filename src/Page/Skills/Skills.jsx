@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+
 import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 import { FaCss3Alt, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
 import {
@@ -13,9 +13,7 @@ import { TbBrandJavascript } from "react-icons/tb";
 const Skills = () => {
   return (
     <section className="mt-16 md:mt-24">
-      <Helmet>
-        <title>Skills | Zihan Portfolio</title>
-      </Helmet>
+      
       <SectionTitle
         title={"Skills"}
         subTitle={"My technical level"}

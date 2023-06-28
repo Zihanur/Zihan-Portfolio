@@ -1,4 +1,5 @@
 import { TbBrandTelegram } from "react-icons/tb";
+import { motion } from "framer-motion";
 
 const ContactModal = () => {
   return (
@@ -42,12 +43,16 @@ const ContactModal = () => {
             required
           />
         </div>
-        <button
+        <motion.button
+          whileHover={{
+            scale: 1.1,
+            textShadow: "0px 0px 5px rgb(255,255,255)",
+          }}
           type="submit"
-          className=" btn btn-active btn-neutral capitalize text-2xl font-normal mt-6"
+          className=" btn rounded-full btn-neutral capitalize text-2xl font-normal mt-6"
         >
           Send message <TbBrandTelegram></TbBrandTelegram>
-        </button>
+        </motion.button>
       </div>
     </div>
   );

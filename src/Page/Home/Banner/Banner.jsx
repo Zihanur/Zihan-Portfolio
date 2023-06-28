@@ -28,13 +28,19 @@ const Banner = () => {
         <div className="grid grid-cols-1 md:grid-cols-7">
           <div className="col-span-1 flex md:flex-col gap-8 text-2xl justify-center  sm:mb-10 md:mb-0">
             <Link onClick={handleGithub}>
-              <LuGithub></LuGithub>
+              <motion.button whileHover={{ scale: 1.4 }}>
+                <LuGithub></LuGithub>
+              </motion.button>
             </Link>
             <Link onClick={handleWebsite}>
-              <BsGlobe></BsGlobe>
+              <motion.button whileHover={{ scale: 1.4 }}>
+                <BsGlobe></BsGlobe>
+              </motion.button>
             </Link>
             <Link onClick={handleLinkdin}>
-              <FaLinkedin></FaLinkedin>
+              <motion.button whileHover={{ scale: 1.4 }}>
+                <FaLinkedin></FaLinkedin>
+              </motion.button>
             </Link>
           </div>
           <div className="col-span-3">
@@ -65,13 +71,17 @@ const Banner = () => {
               work. Hire me...
             </motion.p>
             <div className="flex sm:flex md:flex-col gap-16 md:gap-32">
-              <button
+              {/* say hello btn with dialog modal */}
+              <motion.button
+                whileHover={{
+                  scale: 1.1,
+                  textShadow: "0px 0px 5px rgb(255,255,255)"
+                }}
                 onClick={() => window.my_modal_2.showModal()}
-                className="w-2/4 btn btn-active btn-neutral capitalize text-xl"
+                className="w-2/4 btn rounded-full btn-neutral capitalize text-xl"
               >
                 Say Hello <TbBrandTelegram></TbBrandTelegram>
-              </button>
-              {/*say hello modal */}
+              </motion.button>
               <dialog id="my_modal_2" className="modal">
                 <form
                   method="POST"
@@ -85,10 +95,10 @@ const Banner = () => {
                 </form>
               </dialog>
 
-              <button className="w-2/6 md:w-1/2 lg:w-2/6 flex items-center gap-4 text-lg border-2 border-black p-2 rounded-full shadow-md bg-base-100 capitalize sm:mb-10 md:mb-0">
+              <div className="w-2/6 md:w-1/2 lg:w-2/6 flex items-center gap-4 text-lg border-2 border-black p-2 rounded-full shadow-md bg-base-100 capitalize sm:mb-10 md:mb-0">
                 <BsMouse></BsMouse> <span>Scroll Down</span>{" "}
                 <BsArrowDownShort></BsArrowDownShort>
-              </button>
+              </div>
             </div>
           </div>
           <div className="col-span-3">
