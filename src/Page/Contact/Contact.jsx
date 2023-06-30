@@ -6,6 +6,7 @@ import {
 } from "react-icons/fa";
 import ContactMessage from "./ContactMessage";
 import SectionTitle from "../../Components/SectionTitle/SectionTitle";
+import { motion } from "framer-motion";
 
 const zihan_email = "https://mail.google.com/mail/u/0/#inbox";
 const zihan_whatsapp = "https://web.whatsapp.com/";
@@ -24,7 +25,6 @@ const Contact = () => {
 
   return (
     <section className="mt-16 md:mt-24">
-      
       <SectionTitle
         title={"Contact Me"}
         subTitle={"Get in touch"}
@@ -34,7 +34,11 @@ const Contact = () => {
         <div className="w-full">
           <h1 className="text-3xl font-medium text-center mb-8">Talk to me</h1>
           <div className="flex flex-col justify-center items-center gap-6">
-            <div className="card w-96 md:w-80 lg:96 bg-base-100 shadow-xl">
+            <motion.div
+              whileHover={{ scale: 1.1, originX: 0 }}
+              transition={{ type: "spring", stiffness: 50 }}
+              className="card w-96 md:w-80 lg:96 bg-base-100 shadow-xl"
+            >
               <div className="card-body items-center text-center">
                 <FaMailBulk className="w-9 h-9 mb-2"></FaMailBulk>
                 <h2 className="card-title">Email</h2>
@@ -46,8 +50,12 @@ const Contact = () => {
                   Write me <FaArrowRight></FaArrowRight>
                 </p>
               </div>
-            </div>
-            <div className="card w-96 md:w-80 lg:96 bg-base-100 shadow-xl">
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.1, originX: 0 }}
+              transition={{ type: "spring", stiffness: 50 }}
+              className="card w-96 md:w-80 lg:96 bg-base-100 shadow-xl"
+            >
               <div className="card-body items-center text-center">
                 <FaWhatsapp className="w-9 h-9 mb-2"></FaWhatsapp>
                 <h2 className="card-title">Whatsapp</h2>
@@ -59,12 +67,16 @@ const Contact = () => {
                   Write me <FaArrowRight></FaArrowRight>
                 </p>
               </div>
-            </div>
-            <div className="card w-96 md:w-80 lg:96 bg-base-100 shadow-xl">
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.1, originX: 0 }}
+              transition={{ type: "spring", stiffness: 50 }}
+              className="card w-96 md:w-80 lg:96 bg-base-100 shadow-xl"
+            >
               <div className="card-body items-center text-center">
                 <FaFacebookMessenger className="w-9 h-9 mb-2"></FaFacebookMessenger>
                 <h2 className="card-title">Messenger</h2>
-                <p>zihan.fb/892739</p>
+                <p>https://www.facebook.com/profile.php?id=100005224305899</p>
                 <p
                   onClick={handleMessenger}
                   className="btn flex items-center gap-2 mt-2"
@@ -72,7 +84,7 @@ const Contact = () => {
                   Write me <FaArrowRight></FaArrowRight>
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
         <ContactMessage></ContactMessage>

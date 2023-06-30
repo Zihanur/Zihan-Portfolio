@@ -75,7 +75,7 @@ const Banner = () => {
               <motion.button
                 whileHover={{
                   scale: 1.1,
-                  textShadow: "0px 0px 5px rgb(255,255,255)"
+                  textShadow: "0px 0px 5px rgb(255,255,255)",
                 }}
                 onClick={() => window.my_modal_2.showModal()}
                 className="w-2/4 btn rounded-full btn-neutral capitalize text-xl"
@@ -107,7 +107,7 @@ const Banner = () => {
               animate={{ x: 0 }}
               transition={{ type: "spring", stiffness: 20 }}
               className="mask mask-squircle filter grayscale"
-              src="https://i.ibb.co/N104v60/IMG-9060.jpg"
+              src="https://i.ibb.co/frD3QFP/banner.jpg"
             />
           </div>
         </div>

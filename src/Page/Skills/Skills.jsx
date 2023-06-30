@@ -1,4 +1,3 @@
-
 import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 import { FaCss3Alt, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
 import {
@@ -9,18 +8,22 @@ import {
   SiFirebase,
 } from "react-icons/si";
 import { TbBrandJavascript } from "react-icons/tb";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
     <section className="mt-16 md:mt-24">
-      
       <SectionTitle
         title={"Skills"}
         subTitle={"My technical level"}
       ></SectionTitle>
       {/* Main part of section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8">
-        <div className="border-2 border-black rounded bg-base-100 shadow-xl">
+        <motion.div
+          whileHover={{ scale: 1.1, origin: 0 }}
+          transition={{ type: "spring", stiffness: 100 }}
+          className="border-2 border-black rounded bg-base-100 shadow-xl"
+        >
           <h1 className="text-center mt-6 text-2xl font-medium">
             Frontend Development
           </h1>
@@ -83,8 +86,12 @@ const Skills = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="border-2 border-black rounded bg-base-100 shadow-xl">
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.1, origin: 0 }}
+          transition={{ type: "spring", stiffness: 100 }}
+          className="border-2 border-black rounded bg-base-100 shadow-xl"
+        >
           <h1 className="text-center mt-6 text-2xl font-medium">
             Backend Development
           </h1>
@@ -102,8 +109,7 @@ const Skills = () => {
               </div>
               <div className="flex gap-1">
                 <div className="bg-black rounded-full">
-                  <SiMongodb
-                    className="w-12 h-12 p-1 text-green-600"></SiMongodb>
+                  <SiMongodb className="w-12 h-12 p-1 text-green-600"></SiMongodb>
                 </div>
                 <div>
                   <h1 className="text-xl font-bold">MongoDB</h1>
@@ -131,7 +137,7 @@ const Skills = () => {
               <div></div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

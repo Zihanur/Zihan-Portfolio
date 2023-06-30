@@ -19,7 +19,7 @@ const About = () => {
             whileHover={{ scale: 1.3, rotate: 360 }}
             transition={{ duration: 3 }}
             className="mask mask-hexagon filter grayscale"
-            src="https://i.ibb.co/DtR8sZ9/IMG-1763.jpg"
+            src="https://i.ibb.co/47vVhb5/about.jpg"
           />
         </motion.div>
         <div className="">
