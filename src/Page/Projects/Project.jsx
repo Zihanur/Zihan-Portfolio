@@ -1,7 +1,11 @@
 import { FaArrowAltCircleRight } from "react-icons/fa";
 
 const Project = ({ project }) => {
-  const { project_name, img } = project;
+  const { live_link, project_name, img } = project;
+
+  const handleLiveDemo = () => {
+    window.location.href = live_link;
+  };
   return (
     <>
       <div className="card w-full glass">
@@ -11,8 +15,11 @@ const Project = ({ project }) => {
         <div className="card-body">
           <h2 className="card-title text-2xl">{project_name}</h2>
           <div className="card-actions justify-end">
-            <button className="flex items-center gap-4 text-lg font-normal btn btn-outline rounded-full shadow-md bg-base-100 capitalize ">
-              More details <FaArrowAltCircleRight></FaArrowAltCircleRight>
+            <button
+              className="flex items-center gap-2 text-lg font-normal btn btn-outline rounded-full shadow-md bg-base-100 capitalize "
+              onClick={handleLiveDemo}
+            >
+              Demo <FaArrowAltCircleRight></FaArrowAltCircleRight>
             </button>
           </div>
         </div>

@@ -11,7 +11,7 @@ const Projects = () => {
   );
 
   useEffect(() => {
-    fetch("http://localhost:5000/projects")
+    fetch("https://zihan-portfolio-server.vercel.app/projects")
       .then((res) => res.json())
       .then((data) => setProjects(data));
   }, []);
