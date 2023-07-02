@@ -14,7 +14,7 @@ const Projects = () => {
   const local_Url = "/public/projects.json";
 
   useEffect(() => {
-    fetch(local_Url)
+    fetch(server_Url)
       .then((res) => res.json())
       .then((data) => setProjects(data));
   }, []);

@@ -14,7 +14,7 @@ const About = () => {
       ></SectionTitle>
       {/* Main part of section */}
       <div className="grid grid-cols-1 md:grid-cols-2 items-center">
-        <div className="sm:order-1 md:-order-1">
+        <div>
           <img
             className="mask mask-squircle filter grayscale mb-6 md:mb-0"
             src="https://i.ibb.co/47vVhb5/about.jpg"
@@ -53,14 +53,16 @@ const About = () => {
               <p>Online 24/7</p>
             </motion.div>
           </div>
-          <p className="my-14 text-xl text-slate-500 text-justify">
-            I am Junior Web Developer. I created user-frinedly and responsive
-            site by React. I completed{" "}
+          <p className="my-14 text-xl text-slate-700 text-justify">
+            I am Junior Web Developer. I created user-friendly and responsive
+            site with React. I completed{" "}
             <span className="font-semibold">Web Development Full Course</span>{" "}
-            tranning in 6 months. Comfortable with React, React Router,
+            training in 6 months. Comfortable with React, React Router,
             JavaScript ES6, Node JS, Express JS, MongoDB, Firebase Tailwind CSS.
           </p>
-          <DownloadCV></DownloadCV>
+          <div className="flex justify-center md:justify-start">
+            <DownloadCV></DownloadCV>
+          </div>
         </div>
       </div>
     </section>
