@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <section className="mt-16 md:mt-24">
+    <section className="mt-16 md:mt-24 mx-6">
       <SectionTitle
         title={"Skills"}
         subTitle={"My technical level"}

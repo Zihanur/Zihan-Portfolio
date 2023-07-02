@@ -8,9 +8,10 @@ import ContactMessage from "./ContactMessage";
 import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 import { motion } from "framer-motion";
 
-const zihan_email = "https://mail.google.com/mail/u/0/#inbox";
-const zihan_whatsapp = "https://web.whatsapp.com/";
-const zihan_messenger = "https://www.facebook.com/messages/t/100008874336211/";
+const zihan_email = "mailto:zrahman04.cse@gmail.com";
+const zihan_whatsapp = "https://wa.me/01704843848";
+const zihan_messenger =
+  "https://web.facebook.com/profile.php?id=100005224305899";
 
 const Contact = () => {
   const handleEmail = () => {
@@ -76,7 +77,7 @@ const Contact = () => {
               <div className="card-body items-center text-center">
                 <FaFacebookMessenger className="w-9 h-9 mb-2"></FaFacebookMessenger>
                 <h2 className="card-title">Messenger</h2>
-                <p>https://www.facebook.com/profile.php?id=100005224305899</p>
+                <p>fb.com/my-profile</p>
                 <p
                   onClick={handleMessenger}
                   className="btn flex items-center gap-2 mt-2"

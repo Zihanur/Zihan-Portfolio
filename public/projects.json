@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "project_name": "Elite Footbal Camp",
     "img": "https://i.ibb.co/RPSV6yd/Elit-footbal-camp1.png",
     "project_type": "web",
@@ -9,6 +10,7 @@
     "features": ["Feature 1", "Feature 2", "Feature 3", "Feature 4"]
   },
   {
+    "id": 2,
     "project_name": "Soprts Toy",
     "img": "https://i.ibb.co/7CX8sdz/sports-toy1.png",
     "project_type": "web",
@@ -18,6 +20,7 @@
     "features": ["Feature 1", "Feature 2", "Feature 3", "Feature 4"]
   },
   {
+    "id": 3,
     "project_name": "Career Zone",
     "img": "https://i.ibb.co/PzW2shZ/career-zone1.png",
     "project_type": "web",
@@ -27,6 +30,7 @@
     "features": ["Feature 1", "Feature 2", "Feature 3", "Feature 4"]
   },
   {
+    "id": 4,
     "project_name": "Bangale Rastuarant",
     "img": "https://i.ibb.co/1qGHtXz/bangale-restaurant1.png",
     "project_type": "web",

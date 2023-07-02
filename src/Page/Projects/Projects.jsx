@@ -10,8 +10,11 @@ const Projects = () => {
     (procect) => procect.project_type == "web"
   );
 
+  const server_Url = "https://zihan-portfolio-server.vercel.app/projects";
+  const local_Url = "/public/projects.json";
+
   useEffect(() => {
-    fetch("https://zihan-portfolio-server.vercel.app/projects")
+    fetch(local_Url)
       .then((res) => res.json())
       .then((data) => setProjects(data));
   }, []);
@@ -19,7 +22,6 @@ const Projects = () => {
 
   return (
     <section className="mt-10 md:mt-10 min-h-screen mx-6">
-      
       <SectionTitle
         title={"Projects"}
         subTitle={"Most recent work"}
@@ -48,10 +50,10 @@ const Projects = () => {
             </div>
           </TabPanel>
           <TabPanel>
-            <h2>Any content 3</h2>
+            <h2>TODO</h2>
           </TabPanel>
           <TabPanel>
-            <h2>Any content 4</h2>
+            <h2>TODO</h2>
           </TabPanel>
         </Tabs>
       </div>

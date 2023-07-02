@@ -13,16 +13,14 @@ const About = () => {
         subTitle={"My Introduction"}
       ></SectionTitle>
       {/* Main part of section */}
-      <div className="grid grid-cols-1 md:grid-cols-2">
-        <motion.div className="sm:order-1 md:-order-1 sm:my-10">
-          <motion.img
-            whileHover={{ scale: 1.3, rotate: 360 }}
-            transition={{ duration: 3 }}
-            className="mask mask-hexagon filter grayscale"
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center">
+        <div className="sm:order-1 md:-order-1">
+          <img
+            className="mask mask-squircle filter grayscale mb-6 md:mb-0"
             src="https://i.ibb.co/47vVhb5/about.jpg"
           />
-        </motion.div>
-        <div className="">
+        </div>
+        <div className="mx-4">
           <div className="flex space-x-4">
             <motion.div
               whileHover={{ scale: 1.1, fontWeight: "bold" }}

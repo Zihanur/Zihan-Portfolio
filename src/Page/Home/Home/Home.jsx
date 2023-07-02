@@ -9,7 +9,7 @@ import Qualification from "../Qualification/Qualification";
 
 const Home = () => {
   return (
-    <div className="mx-6">
+    <div className="mx-10">
       {/* Home page sections */}
       <Banner></Banner>
       <About></About>

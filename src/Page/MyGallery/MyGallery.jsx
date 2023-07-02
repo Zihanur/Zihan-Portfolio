@@ -13,7 +13,7 @@ import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 
 const MyGallery = () => {
   return (
-    <section className="min-h-screen">
+    <section className="mt-16 md:mt-24">
       <SectionTitle
         title={"My Gallery"}
         subTitle={"You can see"}
@@ -24,7 +24,7 @@ const MyGallery = () => {
           grabCursor={true}
           modules={[EffectCards]}
           className="mySwiper"
-          style={{ width: "400px", height: "540px" }}
+          style={{ width: "340px", height: "480px" }}
         >
           <SwiperSlide>
             <img src="https://i.ibb.co/9p1ph9X/rsz-img-9028.jpg" alt="" />
